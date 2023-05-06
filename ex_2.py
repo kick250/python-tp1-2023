@@ -1,8 +1,5 @@
 from helpers import ask_number
 
-def is_from_terminal():
-  return __name__ == '__main__'
-
 def generate_serie(length):
     serie = []
     value_N = 1
@@ -32,11 +29,11 @@ def main():
         if is_last_serie:
             print()
             continue
-            
+
         print(" + ", end = "")
 
     print(f"Resultado => {sum_serie(serie)}")
 
 
-if is_from_terminal():
+if  __name__ == '__main__':
   main()

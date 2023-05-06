@@ -1,6 +1,3 @@
-def is_from_terminal():
-  return __name__ == '__main__'
-
 def sum_each_tuple(tuples):
   return tuple([sum(values) for values in tuples])
 
@@ -19,5 +16,5 @@ def main():
   print(f"Média total: {medium_of_tuples}")
 
 
-if is_from_terminal():
+if  __name__ == '__main__':
   main()

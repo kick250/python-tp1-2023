@@ -1,7 +1,3 @@
-def is_from_terminal():
-  return __name__ == '__main__'
-
-
 def cumsum(values):
     values_sums = []
 
@@ -18,5 +14,5 @@ def main():
     print(values_sums)
 
 
-if is_from_terminal():
-   main()
+if  __name__ == '__main__':
+  main()

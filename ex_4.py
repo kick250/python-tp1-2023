@@ -1,9 +1,6 @@
 from unidecode import unidecode
 
 
-def is_from_terminal():
-  return __name__ == '__main__'
-
 def is_palindrome(sentence):
     value = str(sentence).lower().replace(" ", "")
     value = unidecode(value)
@@ -17,5 +14,5 @@ def main():
         print("Essa palavar não é um palindromo")
 
 
-if is_from_terminal():
-   main()
+if  __name__ == '__main__':
+  main()
