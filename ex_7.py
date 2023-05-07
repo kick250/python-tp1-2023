@@ -3,18 +3,16 @@ from helpers import ask_number, read_vector
 
 VECTOR_LENGTH = 10
 
-def count_occurrences(vector, number):
-  return vector.count(number)
+def count_unique_values(vector):
+  return len(set(vector))
 
 def main():
   vector = read_vector(vector_length=VECTOR_LENGTH)
-  number = ask_number(message="Digite o número que você quer contar: ")
 
-  quantity = count_occurrences(vector, number)
+  unique_values_quantity = count_unique_values(vector)
 
   print(f"Vetor => {vector}")
-  print(f"O número {number} aparece {quantity} {'vez' if (quantity == 1) else 'vezes'} no vetor.")
-
+  print(f"Esse vetor possui {unique_values_quantity} {'valor diferente' if unique_values_quantity == 1 else 'valores diferentes'}.")
 
 if  __name__ == '__main__':
   main()

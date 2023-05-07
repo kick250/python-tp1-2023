@@ -1,10 +1,9 @@
 import ex_7
 
 def test_count_occurrences():
-  number_to_count = 2
-  vector = (1, 1, 1, 1, 1, 1, 1, 1, number_to_count, number_to_count, number_to_count)
+  vector = (1, 1, 1, 1, 1, 2, 3, 4)
 
-  result = ex_7.count_occurrences(vector, number_to_count)
-  assert result == 3
+  result = ex_7.count_unique_values(vector)
+  assert result == 4
 
 
